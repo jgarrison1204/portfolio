@@ -1,11 +1,32 @@
 body {
     background-color: lightblue;
+    box-sizing: border-box;
 }
-nav {
+li {
+	float: left;
+	list-style-type: none;
+}
+#nav-contrainer {
+	margin: 0 25px;
+}
+#nav-headers {
 	display: flex;
+	flex-flow: row wrap;
+  	justify-content: space-around;
 }
-
 #logo {
-	z-index: 1;
-	margin: 0 auto;
+	z-index: 2;
+	margin: auto;
+	position: absolute;
+}
+#crm-project {
+	background-color: black;
+}
+.flex-container {
+	width: 100%;
+	text-align: center;
+}
+.project {
+	border: 2px solid red;
+	min-height: 100px;
 }
