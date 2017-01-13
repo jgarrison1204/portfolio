@@ -10,3 +10,6 @@ $("#close-btn-wrapper").click(function(){
 	$(this).addClass("spin");
 	$("#overlay").delay(1000).animate({width: "0px"});
 })
+$('.carousel').carousel({
+  interval: 2000
+})
