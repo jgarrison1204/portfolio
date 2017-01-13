@@ -8,6 +8,11 @@ li {
 	float: left;
 	list-style-type: none;
 }
+#content {
+	height: 70vw;
+	display: flex;
+	align-items: center;
+}
 #nav-contrainer {
 	margin: 0 25px;
 }
@@ -25,9 +30,7 @@ li {
 	max-width: 800px;
 	margin: 0 auto;
 	min-height: 400px;  
-}
-#crm-project {
-	
+	margin-bottom: calc(70vw - 99%);
 }
 .spin {
 	animation: spin 3s ease 1;
@@ -50,7 +53,6 @@ li {
     top: 0;
     background-color: rgb(0,0,0); 
     overflow-x: hidden;
-    /*transition: 0.5s;*/
 }
 .enlarge {
 	font-size: 4em;
@@ -65,10 +67,4 @@ li {
 .carousel-indicators {
 	left: 48%;
 	margin: 0 auto; 
-}
-.test {
-	width:80px;
-	height:80px;
-	display:none;
-	background-color:green;
 }
