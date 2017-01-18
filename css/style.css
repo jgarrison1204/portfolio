@@ -24,6 +24,21 @@ li {
 	margin: auto;
 	position: absolute;
 }
+#typed {
+	color: white;
+}
+.type-wrap {
+	text-align: center;
+} 
+.typed-cursor{
+    opacity: 1;
+    font-weight: 200;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -ms-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
 .navbar {
 	border-radius: 0px;
 }
