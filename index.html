@@ -12,22 +12,29 @@
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav id="nav-contrainer" class="row">
-	<div class="flex-container"><span id="logo" class="glyphicon glyphicon-user"></span>
+<nav id="nav-container" class="nav navbar navbar-default">
+	<div class="container-fluid"><!-- <span id="logo" class="glyphicon glyphicon-user"></span> -->
+		    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button id="menu-nav" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapsed" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+	 <div class="collapse navbar-collapse" id="navbar-collapsed">
+      <ul class="nav navbar-nav">
+        <li><a href="#">About Me<span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
 	</div>
-	<ul id="nav-headers">
-		<li class="list-item">About Me</li>
-		<li class="list-item">Projects</li>
-		<li class="list-item">Resume</li>
-		<li class="list-item">Contact</li>
-	</ul>
 </nav>
 <main id="content" class="container">
-	<!-- <section class="row">
-		<section id="crm-project" class="col-sm-4 project"><img style="width: 100%; height: 100%;" src="http://placehold.it/350x150"></section>
-		<section id="dashboard-project" class="col-sm-4 project"><img style="width: 100%; height: 100%;" src="http://placehold.it/350x150"></section>
-		<section id="whatever-project" class="col-sm-4 project"><img style="width: 100%; height: 100%;" src="http://placehold.it/350x150"></section>
-	</section> -->
 	<section class="container">
 		<section id="slide-show-wrapper" class="row">
 			<section class="col-sm-12">
@@ -41,9 +48,9 @@
 					<!-- wrapper for slides -->
 					<div class="carousel-inner" role="listbox">
 						<div class="item active">
-							<img id="crm-project" class="full-img" src="http://placehold.it/600x300" alt="">
+							<img id="crm-project" class="full-img" src="crm.png" alt="">
 							<div class="carousel-caption">
-								<h2>CRM Project</h2>
+								<h2 class="slide-show-title">CRM Implementation</h2>
 							</div>
 						</div>
 						<div class="item">

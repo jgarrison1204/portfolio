@@ -1,4 +1,5 @@
 @import url("animations.css");
+@import url("media_queries.css");
 
 body {
     background-color: lightblue;
@@ -13,9 +14,6 @@ li {
 	display: flex;
 	align-items: center;
 }
-#nav-contrainer {
-	margin: 0 25px;
-}
 #nav-headers {
 	display: flex;
 	flex-flow: row wrap;
@@ -26,11 +24,11 @@ li {
 	margin: auto;
 	position: absolute;
 }
-#slide-show {
-	max-width: 800px;
-	margin: 0 auto;
-	min-height: 400px;  
-	margin-bottom: calc(70vw - 99%);
+.navbar {
+	border-radius: 0px;
+}
+.navbar-nav {
+	float: right;
 }
 .spin {
 	animation: spin 3s ease 1;
@@ -67,4 +65,7 @@ li {
 .carousel-indicators {
 	left: 48%;
 	margin: 0 auto; 
+}
+.slide-show-title {
+	color: black;
 }
