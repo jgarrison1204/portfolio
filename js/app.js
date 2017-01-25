@@ -7,7 +7,9 @@ $("#intro span").each(function(i, item){
 		$("#"+i+"-span").delay(2000).animate({"opacity": "1"}, 700);
 	}, 1000*i);
 })
-
+$("#link-to-categories").click(function(){
+	$(this).toggleClass('clicked')
+})
 $("#crm-project").click(function(){
 	$(".overlay").fadeIn(2000);
 	$("#close-btn-wrapper").removeClass("spin");
@@ -21,6 +23,7 @@ $("#close-btn-wrapper").click(function(){
 $('.carousel').carousel({
   interval: 2000
 })
+
 //jQuery plug in 
 setTimeout(function timer(){
 	$("#typed-strings").removeClass(".hide");
