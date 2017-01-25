@@ -1,14 +1,10 @@
 "use strict";
-var timeDelay = 0;
-var time = 1000;
 $("#test").click(function(){
 	$(this).toggle();
 });
 $("#intro span").each(function(i, item){
 	setTimeout(function timer(){
 		$("#"+i+"-span").delay(2000).animate({"opacity": "1"}, 700);
-		timeDelay += time + 2000;
-		console.log(timeDelay);
 	}, 1000*i);
 })
 
@@ -49,3 +45,31 @@ function foo(){
     let test = document.getElementById("content"); 
     console.log(test);
 }
+
+for (let i = 0; i <= 5; i++) {
+    setTimeout(function timer(){
+        console.log(i)
+    }, 1000*i);
+};
+
+function CoolModule(){
+    var something = "cool";
+    var another = [1,2,3];
+
+    function doSomething(){
+        console.log(something);
+    }
+
+    function doAnother(){
+        console.log(another.join("!"))
+    }
+
+    return {
+        doSomething: doSomething,
+        doAnother: doAnother
+    };
+}   
+
+var foo = CoolModule();
+foo.doSomething();
+foo.doAnother();

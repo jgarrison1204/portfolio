@@ -5,4 +5,12 @@
 		min-height: 400px;  
 		margin-bottom: calc(70vw - 99%);
 	}
+}
+@media screen and (min-width: 550px) {
+    .back-image {
+        background: url("../images/table.jpg") no-repeat fixed center;
+    }
+    .wrap {
+		font-size: 	2.3em;
+	}
 } 
