@@ -1,4 +1,5 @@
 "use strict";
+console.log(window.location);
 $("#test").click(function(){
 	$(this).toggle();
 });
@@ -6,9 +7,6 @@ $("#intro span").each(function(i, item){
 	setTimeout(function timer(){
 		$("#"+i+"-span").delay(2000).animate({"opacity": "1"}, 700);
 	}, 1000*i);
-})
-$("#link-to-categories").click(function(){
-	$(this).toggleClass('clicked')
 })
 $("#crm-project").click(function(){
 	$(".overlay").fadeIn(2000);
@@ -23,7 +21,6 @@ $("#close-btn-wrapper").click(function(){
 $('.carousel').carousel({
   interval: 2000
 })
-
 //jQuery plug in 
 setTimeout(function timer(){
 	$("#typed-strings").removeClass(".hide");
@@ -48,3 +45,24 @@ function foo(){
     let test = document.getElementById("content"); 
     console.log(test);
 }
+//Attempting to implement smoothscrolling with jQUery for a single anchor tag. May refactor to 
+//implement smooth scrolling for all <a>;
+$("a").click(function(e){
+	//setting binding context for this. Probably unnessecarry but making sure we can explain everything that's going on.
+	var self = this;
+	//this.hash returns the href from an <a> and returns the part of the URL begining with a #
+	//if there is a # in the href (e.g. its an internal reference) then do stuff.
+	if (self.hash) {
+		//prevent default behavior of <a> to immediately scroll to #	
+		e.preventDefault();
+		//store self.hash in varable with lexical scope.
+		var idHash = self.hash;
+		// Use jQuery's animate() to set the scrolltop (number of pixels from the top of window) to
+		//to top of categories section.
+		//jQuery verison of offsetTop which returns the top position in pixels relative to the parent element in this case body.
+		//set speed in miliseconds to 1000 could use plug-ins to adjust easing speeds http://jqueryui.com/
+		$('body').animate({
+			scrollTop: $(idHash).offset().top
+		}, 1000);
+	}
+})
