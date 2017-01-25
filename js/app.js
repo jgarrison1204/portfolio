@@ -45,31 +45,3 @@ function foo(){
     let test = document.getElementById("content"); 
     console.log(test);
 }
-
-for (let i = 0; i <= 5; i++) {
-    setTimeout(function timer(){
-        console.log(i)
-    }, 1000*i);
-};
-
-function CoolModule(){
-    var something = "cool";
-    var another = [1,2,3];
-
-    function doSomething(){
-        console.log(something);
-    }
-
-    function doAnother(){
-        console.log(another.join("!"))
-    }
-
-    return {
-        doSomething: doSomething,
-        doAnother: doAnother
-    };
-}   
-
-var foo = CoolModule();
-foo.doSomething();
-foo.doAnother();
