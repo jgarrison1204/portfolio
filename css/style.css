@@ -22,7 +22,7 @@ li {
 	height: 100vw;
 	background-color: 	rgba(242,242,242,.9);
 }
-#categories > header > h2 {
+#category-details > header > h2 {
 	line-height: 5;
 }
 #content {
@@ -168,14 +168,23 @@ li {
 	transform: rotate(135deg);
 }
 .hold {
-	min-height: 200px;
+	min-height: 250px;
 	text-align: center;
 	display: table;
 	color: orange;
 }
 .hold > .center-img {
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: bottom;
+}
+.cat-details {
+	text-align: center;
+}
+.cat-title {
+	color: black;
+}
+.cat-text {
+	color: black;
 }
 #slide-show-wrapper {
 	display: none;
