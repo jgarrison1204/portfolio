@@ -1,9 +1,9 @@
 @import url("animations.css");
 @import url("media_queries.css");
 
-body {
-    box-sizing: border-box;
+body, html {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 li {
 	float: left;
@@ -20,6 +20,10 @@ li {
 }
 #categories {
 	height: 100vw;
+	background-color: 	rgba(242,242,242,.9);
+}
+#categories > header > h2 {
+	line-height: 5;
 }
 #content {
 	height: 70vw;
@@ -41,6 +45,29 @@ li {
 #typed, #intro {
 	color: white;
 }
+#search, #code {
+	width: 100%;
+	color: orange;
+}
+#chart {
+	position: absolute;
+	z-index: 5;
+	right: 49%;
+	top: 45%;
+	color: darkblue;
+}
+#project-manager {
+	position: relative;
+	z-index: 6;
+	color: orange;
+}
+#gear {
+	position: absolute;
+	z-index: 5;
+	right: 42%;
+	bottom: 50%;
+	color: darkblue;
+}
 .hide {
 	display: none;
 }
@@ -52,6 +79,7 @@ li {
 .type-wrap > h1, .wrap > h1 {
 	text-align: center;
 	font-size: 	1.2em;
+	width: 100%;
 }
 .typed-cursor{
     opacity: 1;
@@ -77,7 +105,6 @@ li {
 	text-align: center;
 }
 .project {
-	/*border: 2px solid red;*/
 	min-height: 100px;
 }
 .overlay {
@@ -140,7 +167,16 @@ li {
 	-webkit-transform: rotate(135deg);
 	transform: rotate(135deg);
 }
-a {
-	color: #6dd4b1;
-	transition: all 0.2s linear;
+.hold {
+	min-height: 200px;
+	text-align: center;
+	display: table;
+	color: orange;
+}
+.hold > .center-img {
+	display: table-cell;
+	vertical-align: middle;
+}
+#slide-show-wrapper {
+	display: none;
 }
