@@ -60,9 +60,9 @@ $("a").click(function(e){
 		// Use jQuery's animate() to set the scrolltop (number of pixels from the top of window) to
 		//to top of categories section.
 		//jQuery verison of offsetTop which returns the top position in pixels relative to the parent element in this case body.
-		//set speed in miliseconds to 1000 could use plug-ins to adjust easing speeds http://jqueryui.com/
+		//set speed in miliseconds to 1500 could use plug-ins to adjust easing speeds http://jqueryui.com/
 		$('body').animate({
 			scrollTop: $(idHash).offset().top
-		}, 1000);
+		}, 1500);
 	}
 })
