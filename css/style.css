@@ -25,7 +25,7 @@ li {
 	height: 100vw;
 	background-color: 	rgba(242,242,242,.9);
 }
-#category-details > header > h2 {
+#category-details > header > h1 {
 	line-height: 5;
 }
 #content {
@@ -55,7 +55,7 @@ li {
 	position: absolute;
 	z-index: 5;
 	right: 49%;
-	top: 45%;
+	top: 5%;
 	color: darkblue;
 }
 #project-manager {
@@ -67,7 +67,7 @@ li {
 	position: absolute;
 	z-index: 5;
 	right: 42%;
-	bottom: 50%;
+	bottom: 90%;
 	color: darkblue;
 }
 .hide {
@@ -176,7 +176,7 @@ li {
 	color: orange;
 }
 .hold > .center-img {
-	display: table-cell;
+	display: table-caption;
 	vertical-align: bottom;
 }
 .cat-details {
