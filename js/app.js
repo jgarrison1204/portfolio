@@ -1,5 +1,5 @@
 "use strict";
-console.log(window.location);
+
 $("#test").click(function(){
 	$(this).toggle();
 });
@@ -8,6 +8,11 @@ $("#intro span").each(function(i, item){
 		$("#"+i+"-span").delay(2000).animate({"opacity": "1"}, 700);
 	}, 1000*i);
 })
+
+var expertiseText = $("#expertise").height();
+console.log($("#categories").height())
+$("#expertise-text").css("margin-bottom", (expertiseText/2 + 10));
+
 $("#crm-project").click(function(){
 	$(".overlay").fadeIn(2000);
 	$("#close-btn-wrapper").removeClass("spin");
@@ -43,7 +48,7 @@ function newTyped(){ /* A new typed object */ }
 
 function foo(){ 
     let test = document.getElementById("content"); 
-    console.log(test);
+    // console.log(test);
 }
 //Attempting to implement smoothscrolling with jQUery for a single anchor tag. May refactor to 
 //implement smooth scrolling for all <a>;
