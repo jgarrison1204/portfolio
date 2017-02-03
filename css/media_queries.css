@@ -1,16 +1,17 @@
-@media screen and (min-width: 767px) {
+@media only screen and (min-width: 767px) {
 	#slide-show {
 		max-width: 800px;
 		margin: 0 auto;
 		min-height: 400px;  
 		margin-bottom: calc(70vw - 99%);
 	}
-}
-@media screen and (min-width: 550px) {
     .back-image {
         background: url("../images/table.jpg") no-repeat fixed center;
     }
     .wrap {
 		font-size: 	2.3em;
 	}
-} 
+	.hold{
+		min-height: 150px;
+	}
+}
