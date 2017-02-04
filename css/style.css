@@ -74,6 +74,14 @@ li {
 	bottom: 90%;
 	color: darkblue;
 }
+#envelope {
+	width: 100%;
+}
+#users {
+	position: relative;
+	z-index: 5;
+	top: 65%;
+}
 .hide {
 	display: none;
 }
