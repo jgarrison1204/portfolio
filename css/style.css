@@ -75,12 +75,17 @@ li {
 	color: darkblue;
 }
 #envelope {
-	width: 100%;
+    position: relative;
+    left: -21%;
+    width: 100%;
+    font-size: 5.6em;
 }
 #users {
-	position: relative;
-	z-index: 5;
-	top: 65%;
+    position: relative;
+    z-index: 5;
+    top: -3%;
+    right: 46%;
+    color: lightblue;
 }
 .hide {
 	display: none;
@@ -208,4 +213,19 @@ li {
 .project-details {
 	height: 100px;
 	border: 1px solid red;
+}
+.icon-wrapper {
+	display: flex;
+	align-items: center;
+	margin: 0 auto;
+	text-align: center;
+}
+#crm-icon-wrapper {
+	margin: 0 auto;
+}
+#cog {
+	position: relative;
+	left: 25%;
+	font-size: 15em;
+    color: lightgreen;
 }
