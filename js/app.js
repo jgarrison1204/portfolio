@@ -71,3 +71,12 @@ $("a").click(function(e){
 		}, 1500);
 	}
 })
+//Change background on stacked font awesome icons on hover.
+$("#icon-container").hover(
+	function mouseOn(){
+		$(this).children().css( "opacity", ".75");
+	},
+	function mouseOff(){
+		$(this).children().css( "opacity", "1");
+	}
+);
